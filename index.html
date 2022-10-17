@@ -37,6 +37,27 @@
 			transition: 3s;}
 
 
+		#anim {
+
+			width: 100px;
+			height: 100px;
+			background-color: darkred;
+			animation-name: example;
+			animation-duration: 5s;
+
+
+
+		}
+
+		@keyframes example{
+		from {background-color: orange;}
+		to {background-color: darkred;}
+
+	}
+
+
+
+
 	</style>
 	
 		
@@ -51,12 +72,16 @@
 			<div class="button">journal</div>
 		</a>
 
-		<a href="index.html">
-			<div class="button"> projects</div>
+		<a href="projects.html">
+			<div class="button">projects</div>
 		</a>
 
 		<div class="button">about me</div>
 
+
+
 	</div>
+
+	<div id="anim"></div>
 </body>
 </html>
