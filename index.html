@@ -38,20 +38,25 @@
 
 
 		#anim {
-
+			position: relative;
 			width: 100px;
 			height: 100px;
 			background-color: darkred;
-			animation-name: example;
+			animation-name: thing;
 			animation-duration: 5s;
+			animation-iteration-count: infinite;
 
 
 
 		}
 
-		@keyframes example{
+		@keyframes thing{
 		from {background-color: orange;}
 		to {background-color: darkred;}
+		0% {left: 0%;}
+		10%{background-color: yellow;}
+		10%{left: 20%;}
+		20%{background-color: lightgreen;}
 
 	}
 
