@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title></title>
+</head>
+<body>
+
+	<!-- 1. add an Event Listener to the document
+
+
+	Sam's Switch strategy:
+	2. Create a variable that acts like a switch that stores the value of an binary (e.g "playing or "paused" true or false) and 
+	3. then based on that play or pause the audio. 
+
+
+
+	Sam's Odd/Even strategy:
+	2. create a counter variable that couns the number of clicks
+	3. If the counter is odd, play the audio
+	4. If the counter is even, pause audio -->
+
+<script type="text/javascript">
+
+		let counter= 0;
+	
+	document.addEventListener("click",
+
+		function(){
+
+
+			counter= counter +1
+			console.log(counter)
+
+
+			if (counter%2== 1){
+				document.body.style.backgroundColor= "Blue"
+
+			}
+			
+			if (counter%2==0){
+
+				document.body.style.backgroundColor= "yellow"
+			}
+
+
+		}
+		) 
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<style type="text/css">
+		
+		#text{
+
+			font-size: 80px;
+		}
+
+		p{
+
+			font-size: 30px;
+		}
+
+	</style>
+</head>
+<body>
+
+	<center>
+	<p>Welcome! Choose what breakfast to have delievered in bed on Sunday!</p>
+	<div id= "text"></div>
+
+</center>
+
+	<script type="text/javascript">
+		var breakfast= ["waffles,", "eggs benedict", "eggs florentine", "breakfast burrito","sausage"];
+
+
+		document.addEventListener("click", function(){
+			var number = Math.round(Math.random()*4)
+			console.log(number)
+			text.innerText= breakfast[number];
+			// text.backgroundImage= "url("+")"
+		})
+
+
+	</script>
+
+		
+
+
+
+
+	
+
+
+</body>
+</html>
