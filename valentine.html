@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title></title>
+<style type="text/css">
+	
+.hearto{
+	width:250px;
+	height:250px;
+	background-image: url(hearty.png) ;
+	background-size: contain;
+	background-repeat: no-repeat;
+	display: inline-block;
+	position: absolute;
+}
+
+#textbox{
+	width: 50vw;
+	height: 25vw;
+	background-color: red;
+	text-align: center;
+	display: inline-block;
+	font-size: 75px;
+	color: white;
+	margin-right: auto;
+	margin-left: auto;
+
+}
+
+
+
+
+</style>
+
+
+</head>
+<body>
+
+<div id=textbox>I love you mommy.<br> Happy valentines day. All that you do is much appreciated and loved. </div>
+
+<div class="hearto"></div>
+
+
+	<script type="text/javascript">
+	
+	
+		document.addEventListener("mousemove", function makeHearts (event){
+		var hearts = document.createElement("div");
+		document.body.appendChild(hearts);
+		hearts.classList.add('hearto');
+		hearts.style.left = event.clientX + "px"
+		hearts.style.top = event.clientY + "px"
+
+
+
+					}
+)
+
+
+
+
+</script>
+
+
+</body>
+</html>

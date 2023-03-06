@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title></title>
+	<style type="text/css">
+		
+
+		.eagle{
+
+			width: 300px;
+			height: 300px;
+			background-image: url(image.png);
+			background-size: contain;
+		}
+
+
+
+	</style>
+</head>
+<body>
+
+
+	<script type="text/javascript">
+		
+//I am making a fucntion that makes divs.
+		function makeeagles(){
+
+			// this line calls up that function under a specific requirement as seen in the for var. //
+			var eagles = document.createElement('div');
+		document.body.appendChild(eagles);
+		eagles.classList.add("eagle")
+		}
+		
+
+		// this part of the code is very specific and only runs when this occurs
+		for (var i=0; i<100; i=i+1){makeeagles()}
+		
+	
+
+
+
+
+	</script>
+
+</body>
+</html>
